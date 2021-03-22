@@ -1,0 +1,27 @@
+JFLAGS = -g
+JC = javac
+JVM = java
+.SUFFIXES: .java .class
+.java.class:
+	$(JC) $(JFLAGS) $*.java
+
+CLASSES = \
+	  Family.java \
+	  Group.java \
+	  Heap.java \
+	  Passenger.java \
+	  PassengerType.java \
+	  Single.java \
+	  Main.java
+
+MAIN = Main
+
+default: classes
+
+classes: $(CLASSES:.java=.class)
+
+run: $(MAIN).class
+	$(JVM) $(MAIN)
+
+clean:
+	$(RM) *.class
