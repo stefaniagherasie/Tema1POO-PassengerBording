@@ -10,7 +10,7 @@ tipul de bilet detinut, daca detin imbarcare prioritara sau daca au nevoi specia
 
 
 
-
+#### IMPLEMENTARE
 Clasa Passenger reprezinta tipul pasager si atributele corespunzatoare. Aceasta clasa are
 metode pentru setarea fiecarui camp pe care il are si metode de tip get() care returneaza 
 valoarea campului specificat.
